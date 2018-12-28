@@ -1,3 +1,7 @@
+FROM ubuntu:16.04
+
+ENV DEBIAN_FRONTEND noninteractive
+
 MAINTAINER Sobri Kamal <normohdsobri@aemulus.com>
 
 RUN apt-get update && apt-get install -y locales && locale-gen en_US.UTF-8
